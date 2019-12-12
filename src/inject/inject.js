@@ -11,3 +11,9 @@ chrome.extension.sendMessage({}, function(response) {
 	}
 	}, 10);
 });
+document.body.innerHTML = document.body.innerHTML.replace(/&amp;lt;/g, '&lt;');
+document.body.innerHTML = document.body.innerHTML.replace(/&amp;gt;/g, '&gt;');
+document.body.innerHTML = document.body.innerHTML.replace(/<span class="hljs-variable">&amp;lt<\/span>;/g, '&lt;');
+document.body.innerHTML = document.body.innerHTML.replace(/<span class="hljs-variable">&amp;gt<\/span>;/g, '&gt;');
+document.body.innerHTML = document.body.innerHTML.replace(/&amp;<span class="hljs-keyword">lt<\/span>;/g, '&lt;');
+document.body.innerHTML = document.body.innerHTML.replace(/&amp;<span class="hljs-keyword">gt<\/span>;/g, '&gt;');
