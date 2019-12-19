@@ -1,6 +1,6 @@
 {
   "name": "HTML Fix",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "Replace `&lt;` with `<` and `&gt;` with `>` on the Atlassian community site",
   "homepage_url": "https://ZenUML.com",
@@ -15,8 +15,6 @@
     "default_title": "HTML fix for &lt;"
   },
   "permissions": [
-    "cookies",
-    "tabs"
   ],
   "content_scripts": [
     {
